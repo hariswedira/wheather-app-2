@@ -11,14 +11,33 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 
-    <title>wheater app</title>
+    <title>weather app</title>
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
+    <div class="container my-5 mx-auto">
+        <h1 class="text-muted text-center my-4">Cheva Weather</h1>
+        <form action="" class="change-location my-4 text-center text-muted">
+            <label for="city">Enter a location for weather information</label>
+            <input type="text" name="city" class="form-control py-4">
+        </form>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <div class="card shadow-lg rounded">
+            <img src="https://via.placeholder.com/400x300" alt="" class="time card-img-top">
+            <div class="icon bg-light mx-auto text-center">
+
+            </div>
+            <div class="text-muted text-uppercase text-center details">
+                <h5 class="my-3">City name</h5>
+                <div class="my-3">Weather condition</div>
+                <div class="display-4 my-4">
+                    <span>temp</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -28,6 +47,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="script/app.js"></script>
+    <script src="script/forecast.js"></script>
 </body>
 
 </html>
