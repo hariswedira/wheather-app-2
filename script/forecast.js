@@ -1,6 +1,4 @@
 const key = 'E26dwgLvGt0nmZnpoBAUAYOd6qpEahAA';
-const card = document.querySelector('.card');
-const detail = document.querySelector('.details')
 
 const getWeather = async (id) => {
 
@@ -10,7 +8,7 @@ const getWeather = async (id) => {
     const response = await fetch(base + query);
     const data = await response.json();
 
-    return data;
+    return data[0];
 
 };
 
